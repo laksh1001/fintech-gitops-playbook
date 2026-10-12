@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: 'https://github.com/laksh1001/fintech-gitops-playbook.git'
-    targetRevision: HEAD
+    targetRevision: main
     path: helm/fintech-app
   destination:
     server: 'https://kubernetes.default.svc'
@@ -18,4 +18,3 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
-
