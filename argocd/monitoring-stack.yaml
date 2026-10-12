@@ -11,6 +11,8 @@ spec:
     targetRevision: 55.x.x
     helm:
       values: |
+        nodeExporter:
+          enabled: false
         grafana:
           adminPassword: "admin"
           service:
@@ -27,4 +29,3 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
-
