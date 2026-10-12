@@ -4,7 +4,7 @@ global:
 
 authService:
   enabled: true
-  replicaCount: 2
+  replicaCount: 3
   image:
     repository: auth-service
     tag: latest
