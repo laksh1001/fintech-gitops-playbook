@@ -1,0 +1,57 @@
+global:
+  namespace: fintech
+  environment: production
+
+authService:
+  enabled: true
+  replicaCount: 2
+  image:
+    repository: auth-service
+    tag: latest
+    pullPolicy: IfNotPresent
+  service:
+    type: ClusterIP
+    port: 8080
+  resources:
+    limits:
+      cpu: 250m
+      memory: 256Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
+
+ledgerService:
+  enabled: true
+  replicaCount: 2
+  image:
+    repository: ledger-service
+    tag: latest
+    pullPolicy: IfNotPresent
+  service:
+    type: ClusterIP
+    port: 8081
+  resources:
+    limits:
+      cpu: 250m
+      memory: 256Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
+
+notificationService:
+  enabled: true
+  replicaCount: 2
+  image:
+    repository: notification-service
+    tag: latest
+    pullPolicy: IfNotPresent
+  service:
+    type: ClusterIP
+    port: 8082
+  resources:
+    limits:
+      cpu: 250m
+      memory: 256Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi

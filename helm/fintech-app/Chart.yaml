@@ -1,0 +1,6 @@
+apiVersion: v2
+name: fintech-app
+description: Helm chart for FinTech Microservices Architecture (Auth, Ledger, Notification)
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
