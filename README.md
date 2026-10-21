@@ -291,3 +291,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ```
 
 ```
+
+
+
+<img width="1887" height="972" alt="1" src="https://github.com/user-attachments/assets/ca61b4fe-c837-414a-aaf5-96cacd5f70b1" />
